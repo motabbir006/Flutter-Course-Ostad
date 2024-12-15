@@ -1,0 +1,37 @@
+// 28 November 2024
+import 'dart:io';
+void main() {
+  print("Enter Your name:");
+  // Single line comment
+  /*multiple line
+  comment
+   */
+  // Variable name should be camel case that is good practice also use in industries
+
+  String? myName = stdin.readLineSync();
+  print("Hello! I am $myName");
+
+  print("Enter Your Age: ");
+  int myAge = int.parse(stdin.readLineSync()!); //user input from Integer value
+
+  print("Enter Any Double Number: ");
+  double doubleValue = double.parse(stdin.readLineSync()!); //user input from double value
+
+  print("I am $myAge years old \nThe Double value is: $doubleValue");
+
+  //Arithmatic Operator
+
+  int firstNum= 10;
+  int secondNum= 20;
+
+  print("Addition of firstNum and secondNum is : ${firstNum + secondNum}");
+  print("Subdivision  of firstNum and secondNum is : ${firstNum - secondNum}");
+  print("Multiplication of firstNum and secondNum is : ${firstNum * secondNum}");
+  print("Division of firstNum and secondNum is : ${firstNum / secondNum}");
+  print("Modulas of firstNum and secondNum is : ${firstNum % secondNum}");
+
+  String ourVarsity =" North Bengal International University";
+  print(ourVarsity);
+
+
+}
