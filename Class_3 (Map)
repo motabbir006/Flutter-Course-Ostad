@@ -1,0 +1,24 @@
+
+//MAP
+void main(){
+  Map<String,int> studentInfo = {
+    'Sourov' : 2011,'Fahim' : 3489,  'Nabil' : 2041,  'Suvro' : 20141,  'Sakib' : 2011,
+  };
+
+  studentInfo.length; // print the length of map
+  print(studentInfo); // print the map
+  print(studentInfo.keys); // print all the keys
+  print(studentInfo.values); // print all the values
+
+  studentInfo['nusrat']= 20470;  //add new value
+  print(studentInfo);
+
+  studentInfo['nusrat']= 20000;  // Change specific key Value
+  print(studentInfo);
+
+  studentInfo.remove('Fahim'); //Remove fahim from map
+  print(studentInfo);
+
+
+}
+
