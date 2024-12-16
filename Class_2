@@ -1,0 +1,46 @@
+void main(){
+  print('Hello Sourov! Can you text is print in new line \nYes Of course! Here n Present new line');
+  //difeerence between var and dynamic
+
+  var valueOne= 10;
+  print(valueOne);
+ // valueOne=  'Hello world';Here not work in var data tye
+  // if you change value need same data type like int to int string to string
+  valueOne = 20; //its Work cause same data type
+  print('cahange vakue is possible same data Example: $valueOne');
+
+  dynamic valueTwo= 30;
+  print('This is integer: $valueTwo');
+  valueTwo= "Hello world!";
+  print('This is String: $valueTwo');
+
+  valueTwo= 23.99;
+  print('This is double: $valueTwo');
+
+  //This is the main difference between var and dynamic
+  //Dynamic easily store any data type in same variable name but var only store same data type
+  //most important question in Viva: Difference between var and dynamic
+
+  List<String>firstName =[ 'Sourov', 'Mahfuz', 'Khusbu', 'Saimin',' Rafi', 'Ratul','Sourov'];
+  //List allow duplicate Value but set not allow duplicate value
+  print(firstName);//Sourov print Twice
+
+  print('The length of list ${firstName.length}');// length of list
+
+  print('Please add One value in list: ');
+  var singleValue = firstName.add('Rubayat'); //Add rubayat in list
+  print(firstName);
+
+  print('Please add Multiple value in list: ');
+  var multipleValue = firstName.addAll(['Nahi','Nahida','Alo','Fahim']);
+  print('Here see add multiple name add in list: \n$firstName');
+
+  //Rubayat Remove
+  print('remove single value${firstName.remove('Rubayat')} \n Here new list: $firstName');
+  print('Index value remove ${firstName.removeAt(7)} $firstName');
+  print('Reverse ${firstName.reversed} $firstName');
+  print('Empty: ${firstName.isEmpty}');
+  print('Is not Empty: ${firstName.isNotEmpty} ');
+
+  //NB: Please more and more practice
+}
