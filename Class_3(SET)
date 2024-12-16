@@ -1,0 +1,50 @@
+//Topic: SET and Maps
+
+void main() {
+  print('Declare a set: ');
+  var studentName = {
+    'Akash',
+    'Nil',
+    'Suvro',
+    'Suveccha',
+    'Nil'
+  }; //Set does not allow duplicate value
+  print(studentName); // nil should be print single not twice;
+
+  //method
+  var adding = studentName.add('Pushpo');
+  print('Add Pushpo Student Name in Set:  $studentName');
+
+  var addALll = studentName.addAll({'Simu', 'Limu', 'Risan'});
+  print('Multiple Student Add in Set:  $studentName');
+
+  print(studentName.length); // Length print
+  print(studentName.isNotEmpty);// false print if nothing is set
+  print(studentName.isEmpty); //true print if nothing is set
+  print(studentName.first); //first index
+  print(studentName.last); //last index
+  studentName.remove('Risan');
+  print(studentName);
+  print(studentName.elementAt(4)); //Specific Indec value print
+  studentName.contains('Simu');
+  print(studentName);
+
+  //Example of Intersection is Set
+
+  var itemOne= {10,20,40,50,60};
+  var itemTwo ={34,23,10,60,80};
+
+  var intersectionValue= itemOne.intersection(itemTwo);
+  print("intersectionValue of set one and Set two: $intersectionValue");
+
+  //Example of Union is Set
+  var unionValue= itemOne.union(itemTwo);
+  print("Union of set one and Set two: $unionValue");
+
+  //difference
+  var diff = itemOne.difference(itemTwo); //Compare one two another set
+  print(itemOne);
+  print(itemTwo);
+  print("difference of set one and Set two: $diff"); 
+
+}
