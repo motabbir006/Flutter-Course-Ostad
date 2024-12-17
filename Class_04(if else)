@@ -1,0 +1,61 @@
+import 'dart:io';
+
+void main(){
+  var age = 10;
+
+  if(age >=20) {
+    print('You are try to a job');
+  }
+  else{
+    print('Chill you are under 20!');
+  }
+
+print('Please! Enter Your Marks: ');
+ //int marks = int.parse(stdin.readLineSync()!);/  / less secure not null able
+  int? marks = int.tryParse(stdin.readLineSync()!); //best practice use tryParse and secure to user input
+
+  if(marks! >= 80){
+    print('CGPA 4.00');
+  }
+  else if(marks >= 75){
+    print('CGPA 3.75');
+
+  }
+  else if( marks >= 70){
+    print('CGPA 3.50');
+  }
+
+  else if(marks >= 65){
+    print('CGPA 3.25');
+
+  }
+  else if( marks >= 60){
+    print('CGPA 3.00');
+  }
+
+  else if(marks >= 55){
+    print('CGPA 2.75');
+
+  }
+  else if( marks >= 50){
+    print('CGPA 2.50');
+  }
+  else{
+    print('Your Fail in this Couse');
+  }
+
+  //Nested if else
+  var Nested= 6;
+
+  if(Nested >31){
+    if(Nested % 2== 0){
+      print('$Nested is Even number');
+    }
+    else{
+      print('$Nested is Odd Number');
+    }
+  }
+  else{
+    print('Please enter more then 30 i you see odd or even');
+  }
+}
