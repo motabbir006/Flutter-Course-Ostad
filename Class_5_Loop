@@ -1,0 +1,53 @@
+void main() {
+  for (int number = 0; number <= 2; number++) {
+    print('Hello world! $number');
+  }
+  //calulate multiplication table using loop
+
+  for (int num = 1; num <= 10; num++) {
+    print("5 * $num = ${5 * num}");
+  }
+//Ceate a map
+  Map<String, int> studentInfo = {
+    'Habiba': 1,
+    'Al Amih': 2,
+    'Santo': 3,
+    'Anik': 4,
+    'Sarmin': 5,
+    'Sakib': 6,
+    'Kabir': 7,
+    'Tuli': 8,
+    'Sourov': 17,
+    'Pushpo': 31
+  };
+  // Convert keys to a list
+  var keys = studentInfo.keys.toList();
+  var Values = studentInfo.values.toList();
+
+  for (var i = 0; i < studentInfo.length; i++) {
+    print(keys[i]);
+    print(Values[i]);
+  }
+}
+/*
+  for (var keys in studentInfo.keys) {
+    // print all the key of Map
+    print(keys);
+  }
+
+  for (var keys in studentInfo.values) {
+    // print all the Value of map
+    print(keys);
+  }
+}
+
+  var lists = [20, 30, 50, 60];
+  var animal = ['Horse', 'deer', 'Cow', 'Hen', 'Goat', 'Tiger', 'Monkey'];
+
+  for (int newList in lists) {    // practice of for in loop
+    print(newList);
+  }
+  print('\n');
+  for (String name in animal) {
+    print(name);
+  } */
